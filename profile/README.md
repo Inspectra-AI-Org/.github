@@ -1,6 +1,6 @@
 # System Design
 
-![diagramm](DetailedDiagramm.png)
+![diagramm](../DetailedDiagramm.png)
 
 ---
 
