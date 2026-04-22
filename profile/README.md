@@ -34,7 +34,6 @@ The system conists of 3 Layers, each has own repo:
 ## Messaging/Agent Layer
 ### Messaging:
 - [@Ten7a](https://github.com/Ten7a)
----
 ### Agents:
 - [@danielmrrk](https://github.com/danielmrrk)
 
