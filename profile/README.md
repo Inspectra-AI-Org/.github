@@ -67,9 +67,9 @@ This architecture ensures scalability, flexibility, and maintainability.
 
 The system is structured into multiple layers:
 
-##1️⃣ Client Layer
-User
-React Frontend
+## 1️⃣ Client Layer
+- User
+- React Frontend
 
 Responsibilities:
 
@@ -83,7 +83,7 @@ Responsibilities:
 * GET /jobs/{id} → Job status
 * GET /results/{id} → Final review
   
-##2️⃣ Backend Layer
+## 2️⃣ Backend Layer
 ### 🧩 Coordinator Service (FastAPI)
 
 The central orchestration component.
@@ -107,10 +107,10 @@ Publishes tasks such as:
 
 Responsibilities:
 
-Collect results from agents
-Merge them into a unified review
-Store results
-Provide them to the frontend
+- Collect results from agents
+- Merge them into a unified review
+- Store results
+- Provide them to the frontend
 ## 3️⃣ Messaging Layer
 🐇 RabbitMQ
 
@@ -118,52 +118,53 @@ The communication backbone of the system.
 
 Responsibilities:
 
-Asynchronous communication
-Decoupling services
-Task distribution
-Result event handling
+- Asynchronous communication
+- Decoupling services
+- Task distribution
+- Result event handling
 ## 4️⃣ Agent Layer
 
 Independent microservices:
 
-🎨 Style Agent
-🐞 Bug Detection Agent
-🔐 Security Agent
-⚡ Performance Agent (optional)
+- 🎨 Style Agent
+- 🐞 Bug Detection Agent
+- 🔐 Security Agent
+- ⚡ Performance Agent (optional)
 
 Responsibilities:
 
-Consume analysis tasks
-Process code
-Publish results
+* Consume analysis tasks
+* Process code
+* Publish results
 
 👉 Agents are scalable and replaceable.
 
 ## 5️⃣ Data Layer
-🐘 PostgreSQL
+### 🐘 PostgreSQL
 
 Responsibilities:
 
-Store analysis jobs
-Store aggregated reviews
-Persist system state
-🔄 End-to-End Flow
-User submits code
-Coordinator creates job
-Tasks are published to RabbitMQ
-Agents process tasks in parallel
-Agents send results back
-Aggregator merges results
-Final review is returned to user
+- Store analysis jobs
+- Store aggregated reviews
+- Persist system state
+- 
+### 🔄 End-to-End Flow
+- User submits code
+- Coordinator creates job
+- Tasks are published to RabbitMQ
+- Agents process tasks in parallel
+- Agents send results back
+- Aggregator merges results
+- Final review is returned to user
 ---
 # 🧩 Why This Architecture?
 
 Inspectra AI is designed to:
 
-Enable parallel AI analysis
-Maintain loose coupling between services
-Support scalability and modularity
-Allow easy extension with new agents
+* Enable parallel AI analysis
+* Maintain loose coupling between services
+* Support scalability and modularity
+* Allow easy extension with new agents
 
 ---
 # 🛠️ Tech Stack (Planned)
@@ -172,6 +173,7 @@ Backend: FastAPI
 Messaging: RabbitMQ
 Database: PostgreSQL
 Deployment: Docker / Docker Compose
+---
 👥 Team & Process
 1 Product Owner
 1 Scrum Master
@@ -186,27 +188,29 @@ Iterate with incremental improvements
 
 The first version should:
 
-Accept code input
-Execute one working agent
-Return a structured result
+* Accept code input
+* Execute one working agent
+* Return a structured result
 
 Then expand step by step:
 
-Add more agents
-Improve aggregation
-Add persistence & UI enhancements
-🔮 Future Extensions
-AI-based refactoring suggestions
-Language-specific analysis
-CI/CD integration
-Real-time result streaming
-Team collaboration features
+* Add more agents
+* Improve aggregation
+* Add persistence & UI enhancements
+  
+---
+# 🔮 Future Extensions
+- AI-based refactoring suggestions
+- Language-specific analysis
+- CI/CD integration
+- Real-time result streaming
+- Team collaboration features
 ---
 # 📌 Summary
 
 Inspectra AI is a distributed AI system that:
 
-Uses multiple specialized agents
-Runs analysis in parallel
-Aggregates results into a single review
-Follows a scalable microservice architecture
+- Uses multiple specialized agents
+- Runs analysis in parallel
+- Aggregates results into a single review
+- Follows a scalable microservice architecture
