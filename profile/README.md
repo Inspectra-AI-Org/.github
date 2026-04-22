@@ -13,6 +13,14 @@ The system conists of 3 Layers, each has own repo:
 (Optionally the DB Layer can be discussed)
 ---
 
+# Responsibilites:
+Frontend Layer:
+@bgmpkr
+@oltir06
+
+---
+
+
 # 🚀 Inspectra AI – Distributed Code Quality Analysis Platform
 ## 📌 Project Overview
 
