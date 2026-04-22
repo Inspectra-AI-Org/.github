@@ -1,3 +1,5 @@
+# 🚀 Inspectra AI – Distributed Code Quality Analysis Platform
+---
 # System Design
 
 ![diagramm](../DetailedDiagramm.png)
@@ -19,11 +21,15 @@ The system conists of 3 Layers, each has own repo:
 - [@bgmpkr](https://github.com/bgmpkr)
 - [@oltir06](https://github.com/oltir06)
 
+---
+
 ## Backend Layer:
 ### Coordinator Service:
 - [@NokhaBORZ](https://github.com/NokhaBORZ)
 ### Aggregator Service:
 - [@Marcel77718](https://github.com/Marcel77718)
+
+---
 
 ## Messaging/Agent Layer
 ### Messaging:
@@ -32,8 +38,7 @@ The system conists of 3 Layers, each has own repo:
 ### Agents:
 - [@danielmrrk](https://github.com/danielmrrk)
 
-
-# 🚀 Inspectra AI – Distributed Code Quality Analysis Platform
+---
 ## 📌 Project Overview
 
 Inspectra AI is a distributed AI-powered platform that analyzes source code using multiple specialized agents running in parallel.
