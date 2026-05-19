@@ -25,7 +25,7 @@ The system conists of 3 Layers, each has own repo:
 
 ## Backend Layer:
 ### Coordinator Service:
-- [@NokhaBORZ](https://github.com/NokhaBORZ)
+- [@arutepsu](https://github.com/arutepsu)
 ### Aggregator Service:
 - [@Marcel77718](https://github.com/Marcel77718)
 
